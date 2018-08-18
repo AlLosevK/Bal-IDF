@@ -4,49 +4,150 @@ bodyClass: homepage-body
 ---
 extends shared/_layout
 block content
-  section.main
-    .container
-      .main__slider
-        h1.main__title Lorem ipsum dolor.
-          br
-          span Lorem ipsum dolor sit amet.
-        p.main__content  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt eligendi sed deleniti quibusdam ea aliquam fugiat recusandae impedit ipsum maxime.
-        .main__links
-          a.main__link Start Now
-          a.main__link.main__link-inactive Contact Us
-  section.about
-    .container
-      .about__directions
-        .directions__item
-          h3.directions__title Lorem ipsum.
-          p.directions__content Lorem ipsum dolor sit amet, consectetur.
-            a.directions__link.directions__link-unassigned(href="#") Unassigned link
-          p.directions__content Lorem ipsum dolor sit amet, consectetur.
-            a.directions__link(href="google.com") Google inc.
-        .directions__item
-          h3.directions__title Lorem ipsum.
-          p.directions__content Lorem ipsum dolor sit amet, consectetur.
-            a.directions__link.directions__link-unassigned(href="#") Unassigned link
-          p.directions__content Lorem ipsum dolor sit amet, consectetur.
-            a.directions__link(href="google.com") Google inc.
-        .directions__item
-          h3.directions__title Lorem ipsum.
-          p.directions__content Lorem ipsum dolor sit amet, consectetur.
-            a.directions__link.directions__link-unassigned(href="#") Unassigned link
-          p.directions__content Lorem ipsum dolor sit amet, consectetur.
-            a.directions__link(href="google.com") Google inc.
-      .about__info
-        h2.about__title How we work
-        .about__aside
-          h3.about__subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea aspernatur eum id deleniti hic pariatur, dignissimos dolorum, molestiae maxime repudiandae reprehenderit minus excepturi, commodi ut nostrum quae. Labore, voluptas, repudiandae.
-          p.about__content Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor libero, dolorem laudantium quidem placeat autem rerum blanditiis architecto, nulla vitae provident voluptate minima repellendus consequuntur pariatur enim delectus ea quos fugiat reprehenderit? Obcaecati modi a praesentium impedit. Ipsum amet iste saepe. Illum eaque odit pariatur, voluptates, alias dicta blanditiis fugiat rem necessitatibus, facere perferendis quaerat, quisquam at cupiditate quae ratione. Distinctio qui, facilis veritatis libero, officiis fuga repudiandae voluptatem odio quam adipisci quidem omnis, sit expedita nobis odit alias. Corrupti!
-          .about__promo
-            .about__promo__item
-              +icon('ico-placeholder').about__ico
-              span We use best materials
-            .about__promo__item
-              +icon('ico-placeholder').about__ico
-              span We use best materials
-            .about__promo__item
-              +icon('ico-placeholder').about__ico
-              span We use best materials
+  main
+    section.main
+      .container
+        .main__slider
+          h1.main__title Lorem ipsum dolor.
+            br
+            span Lorem ipsum dolor sit amet.
+          p.main__content  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt eligendi sed deleniti quibusdam ea aliquam fugiat recusandae impedit ipsum maxime.
+          .main__links
+            a.main__link Start Now
+            a.main__link.main__link-inactive Contact Us
+    section.about
+      .container
+        .about__directions
+          .directions__item
+            h3.directions__title Lorem ipsum.
+            p.directions__content Lorem ipsum dolor sit amet, consectetur.
+              a.directions__link.directions__link-unassigned(href="#") Unassigned link
+            p.directions__content Lorem ipsum dolor sit amet, consectetur.
+              a.directions__link(href="google.com") Google inc.
+          .directions__item
+            h3.directions__title Lorem ipsum.
+            p.directions__content Lorem ipsum dolor sit amet, consectetur.
+              a.directions__link.directions__link-unassigned(href="#") Unassigned link
+            p.directions__content Lorem ipsum dolor sit amet, consectetur.
+              a.directions__link(href="google.com") Google inc.
+          .directions__item
+            h3.directions__title Lorem ipsum.
+            p.directions__content Lorem ipsum dolor sit amet, consectetur.
+              a.directions__link.directions__link-unassigned(href="#") Unassigned link
+            p.directions__content Lorem ipsum dolor sit amet, consectetur.
+              a.directions__link(href="google.com") Google inc.
+        .about__info
+          h2.about__title How we work
+          .about__aside
+            h3.about__subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea aspernatur eum id deleniti hic pariatur, dignissimos dolorum, molestiae maxime repudiandae reprehenderit minus excepturi, commodi ut nostrum quae. Labore, voluptas, repudiandae.
+            p.about__content Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor libero, dolorem laudantium quidem placeat autem rerum blanditiis architecto, nulla vitae provident voluptate minima repellendus consequuntur pariatur enim delectus ea quos fugiat reprehenderit? Obcaecati modi a praesentium impedit. Ipsum amet iste saepe. Illum eaque odit pariatur, voluptates, alias dicta blanditiis fugiat rem necessitatibus, facere perferendis quaerat, quisquam at cupiditate quae ratione. Distinctio qui, facilis veritatis libero, officiis fuga repudiandae voluptatem odio quam adipisci quidem omnis, sit expedita nobis odit alias. Corrupti!
+            .about__promo
+              .about__promo__item
+                +icon('ico-placeholder').about__ico
+                span We use best materials
+              .about__promo__item
+                +icon('ico-placeholder').about__ico
+                span We use best materials
+              .about__promo__item
+                +icon('ico-placeholder').about__ico
+                span We use best materials
+    section.portfolio
+      .container
+        .portfolio__nav
+          button.portfolio__filter.is-active All
+          button.portfolio__filter Buildings
+          button.portfolio__filter Construction
+          button.portfolio__filter Interior
+          button.portfolio__filter Peinting
+          button.portfolio__filter Tower
+      .portfolio__row
+          .portfolio__item
+            .portfolio__content
+              h3.portfolio__title Great Tower of Chinese Bank
+              .portfolio__tags
+                span.portfolio__tag Interior,
+                span.portfolio__tag Peinting
+              .portfolio__item-nav
+                button.portfolio__maximalize
+                  +icon('ico-add')
+                a(href="#").portfolio__link
+                  +icon('ico-right-arrow')
+          .portfolio__item
+            .portfolio__content
+              h3.portfolio__title Great Tower of Chinese Bank
+              .portfolio__tags
+                span.portfolio__tag Interior,
+                span.portfolio__tag Peinting
+              .portfolio__item-nav
+                button.portfolio__maximalize
+                  +icon('ico-add')
+                a(href="#").portfolio__link
+                  +icon('ico-right-arrow')
+          .portfolio__item
+            .portfolio__content
+              h3.portfolio__title Great Tower of Chinese Bank
+              .portfolio__tags
+                span.portfolio__tag Interior,
+                span.portfolio__tag Peinting
+              .portfolio__item-nav
+                button.portfolio__maximalize
+                  +icon('ico-add')
+                a(href="#").portfolio__link
+                  +icon('ico-right-arrow')
+          .portfolio__item
+            .portfolio__content
+              h3.portfolio__title Great Tower of Chinese Bank
+              .portfolio__tags
+                span.portfolio__tag Interior,
+                span.portfolio__tag Peinting
+              .portfolio__item-nav
+                button.portfolio__maximalize
+                  +icon('ico-add')
+                a(href="#").portfolio__link
+                  +icon('ico-right-arrow')
+      .portfolio__row
+          .portfolio__item
+            .portfolio__content
+              h3.portfolio__title Great Tower of Chinese Bank
+              .portfolio__tags
+                span.portfolio__tag Interior,
+                span.portfolio__tag Peinting
+              .portfolio__item-nav
+                button.portfolio__maximalize
+                  +icon('ico-add')
+                a(href="#").portfolio__link
+                  +icon('ico-right-arrow')
+          .portfolio__item
+            .portfolio__content
+              h3.portfolio__title Great Tower of Chinese Bank
+              .portfolio__tags
+                span.portfolio__tag Interior,
+                span.portfolio__tag Peinting
+              .portfolio__item-nav
+                button.portfolio__maximalize
+                  +icon('ico-add')
+                a(href="#").portfolio__link
+                  +icon('ico-right-arrow')
+          .portfolio__item
+            .portfolio__content
+              h3.portfolio__title Great Tower of Chinese Bank
+              .portfolio__tags
+                span.portfolio__tag Interior,
+                span.portfolio__tag Peinting
+              .portfolio__item-nav
+                button.portfolio__maximalize
+                  +icon('ico-add')
+                a(href="#").portfolio__link
+                  +icon('ico-right-arrow')
+          .portfolio__item
+            .portfolio__content
+              h3.portfolio__title Great Tower of Chinese Bank
+              .portfolio__tags
+                span.portfolio__tag Interior,
+                span.portfolio__tag Peinting
+              .portfolio__item-nav
+                button.portfolio__maximalize
+                  +icon('ico-add')
+                a(href="#").portfolio__link
+                  +icon('ico-right-arrow') 
+          

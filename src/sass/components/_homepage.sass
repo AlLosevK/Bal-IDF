@@ -10,7 +10,7 @@
     justify-content: flex-start
     align-items: center
     padding: 140px 20px 150px
-    height: 100vh
+    min-height: 100vh
     text-align: center
     color: #fff
   &__title
@@ -53,27 +53,24 @@
       color: $mainColor
       &:hover
         background-color: $mainColor
-        color: $text2Color
+        color: $textColor
 
 .about
   position: relative
-  padding-top: 250px
   background-image: url("http://unitech.gtcreators.com/wp-content/uploads/2017/06/bg-1.jpg?id=63")
   background-repeat: no-repeat
   background-size: 100% 70%
   background-position: 100% 100%
-  height: 85vh
+  min-height: 85vh
   &__directions
-    position: absolute
     width: 80%
+    margin: -70px auto 50px
     display: -webkit-flex
     display: -ms-flex
     display: flex
     flex-direction: row
     justify-content: space-between
     align-items: center
-    top: -100px
-    left: 10%
   &__info
     display: -webkit-flex
     display: -ms-flex
@@ -134,3 +131,122 @@
     border: 2px solid  $textColor
     background-color: #f5f5f7
     width: 32%
+  &__title
+    margin: 0 0 30px
+  &__content
+    margin: 0 0 10px
+
+.portfolio
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: center
+  min-height: 100vh
+  padding: 60px 0
+  &__nav
+    margin: 0 0 40px
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+  &__filter
+    background-color: transparent
+    border: none
+    font-weight: bold
+    font-size: 14px
+    color: $textColor
+    padding: 8px 20px
+    border: 3px solid  transparent
+    border-top: 1px solid  transparent
+    border-bottom: 5px solid  transparent
+    border-radius: 50px
+    margin: 0 2px
+    &.is-active,
+    &:hover
+      border: 3px solid  $text2Color
+      border-top: 1px solid  $textColor
+      border-bottom: 5px solid  $textColor
+      border-radius: 50px
+  &__row
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    align-items: center
+    width: 100%
+  &__item
+    background-image: url('http://unibuild.gtcreators.com/wp-content/uploads/2017/06/portfolio-2-2-500x375.jpg')
+    background-repeat: no-repeat
+    background-size: 100% 100%
+    background-position: 50% 50%
+    padding: 10px
+    width: 25%
+    min-height: 275px
+    &-nav
+      width: 100%
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      flex-direction: row
+      justify-content: flex-end
+      align-items: center
+    &:hover
+      background-size: 120% 120%
+      background-position: 50% 50%
+      transition: all .7s
+      & .portfolio
+        &__content
+          display: -webkit-flex
+          display: -ms-flex
+          display: flex
+          background-color: rgba(0, 0, 0, 0.8)
+          transition: all 0.7s
+        &__title
+          opacity: 1
+          margin-top: 0
+          transition: all 0.7s
+  &__content
+    display: none
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-end
+    padding: 15px
+    color: $text2Color
+    min-height: 100%
+  &__title
+    color: #fff
+    opacity: 0
+    margin: 0 0 20px
+    width: 100%
+    margin-top: 50px
+  &__tags
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: flex-start
+    align-items: center
+    margin-bottom: 115px
+    width: 100%
+  &__maximalize
+    background-color: transparent
+    color: #fff
+    cursor: pointer
+    border: none
+    & svg
+      width: 35px
+      height: 35px
+  &__link
+    background-color: transparent
+    color: #fff
+    cursor: pointer
+    border: none
+    & svg
+      width: 25px
+      height: 25px
