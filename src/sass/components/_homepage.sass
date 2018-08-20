@@ -1,4 +1,4 @@
-.main
+.head
   background-image: url("http://unibuild.gtcreators.com/wp-content/uploads/revslider/first/slider-1.jpg")
   background-repeat: no-repeat
   background-size: cover
@@ -9,7 +9,7 @@
     flex-direction: column
     justify-content: flex-start
     align-items: center
-    padding: 140px 20px 150px
+    padding: 140px 0 150px
     min-height: 100vh
     text-align: center
     color: #fff
@@ -62,15 +62,6 @@
   background-size: 100% 70%
   background-position: 100% 100%
   min-height: 85vh
-  &__directions
-    width: 80%
-    margin: -70px auto 50px
-    display: -webkit-flex
-    display: -ms-flex
-    display: flex
-    flex-direction: row
-    justify-content: space-between
-    align-items: center
   &__info
     display: -webkit-flex
     display: -ms-flex
@@ -79,7 +70,7 @@
     justify-content: flex-start
     align-items: flex-start
   &__aside
-    flex-basis: 65%
+    width: 65%
     color: $text2Color
     display: -webkit-flex
     display: -ms-flex
@@ -89,7 +80,7 @@
     align-items: flex-start
   &__title
     font-size: 50px
-    flex-basis: 20%
+    width: 20%
     margin: 0
   &__subtitle
     font-size: 16px
@@ -126,15 +117,61 @@
 
 
 .directions
+  width: 94%
+  margin: -70px auto 50px
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
   &__item
-    padding: 20px 30px
+    padding: 60px 30px
     border: 2px solid  $textColor
     background-color: #f5f5f7
     width: 32%
+    position: relative
+    &-pic
+      background-image: url('http://unibuild.gtcreators.com/wp-content/uploads/2017/06/feature_item_i.jpg')
+      background-repeat: no-repeat
+      background-position: 100% 100%
+      background-size: 100% 100%
+      & .directions
+        &__title
+          color: #fff
+        &__link
+          &-nav
+            border-color: #fff
+            & svg
+              color: #fff
+  &__number
+    position: absolute
+    font-size: 80px
+    font-weight: bold
+    color: $text2Color
+    opacity: 0.15
+    top: 12px
+    left: 25px
   &__title
     margin: 0 0 30px
+    text-transform: uppercase
+    color: $textColor
   &__content
     margin: 0 0 10px
+    color: $text2Color
+  &__link
+    cursor: pointer
+    &:hover
+      color: #0FC
+    &-nav
+      position: absolute
+      border: 2px solid  #000
+      position: absolute
+      bottom: 20px
+      right: 20px
+      padding: 6px 4px 3px
+      & svg
+        width: 23px
 
 .portfolio
   display: -webkit-flex
@@ -143,8 +180,8 @@
   flex-direction: column
   justify-content: flex-start
   align-items: center
-  min-height: 100vh
-  padding: 60px 0
+  min-height: 80vh
+  padding: 60px 0 0
   &__nav
     margin: 0 0 40px
     display: -webkit-flex
@@ -167,9 +204,9 @@
     margin: 0 2px
     &.is-active,
     &:hover
-      border: 3px solid  $text2Color
-      border-top: 1px solid  $textColor
-      border-bottom: 5px solid  $textColor
+      border: 3px solid  lighten($text2Color, 30%)
+      border-top: 1px solid  lighten($text2Color, 30%)
+      border-bottom: 5px solid  lighten($text2Color, 30%)
       border-radius: 50px
   &__row
     display: -webkit-flex
@@ -198,32 +235,39 @@
     &:hover
       background-size: 120% 120%
       background-position: 50% 50%
-      transition: all .7s
+      transition: background-size .7s
       & .portfolio
         &__content
-          display: -webkit-flex
-          display: -ms-flex
-          display: flex
-          background-color: rgba(0, 0, 0, 0.8)
-          transition: all 0.7s
+          opacity: 0.8
+          transition: opacity 0.8s
         &__title
           opacity: 1
-          margin-top: 0
-          transition: all 0.7s
+          transform: translateY(0)
+          transition: opacity 0.8s 0.1, transform 1s 0.1s
+        &__tags
+          opacity: 1
+          transform: translateY(0)
+          transition: opacity 1.2s 0.3, transform 0.8s 0.3s
   &__content
-    display: none
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
     flex-direction: column
-    justify-content: flex-start
-    align-items: flex-end
+    justify-content: space-between
+    align-items: flex-start
+    background-color: #000
+    opacity: 0
     padding: 15px
     color: $text2Color
-    min-height: 100%
+    min-height: 250px
+    &-container
+      width: 100%
   &__title
     color: #fff
     opacity: 0
-    margin: 0 0 20px
+    transform: translateY(15px)
+    margin: 0 0 15px
     width: 100%
-    margin-top: 50px
   &__tags
     display: -webkit-flex
     display: -ms-flex
@@ -232,7 +276,8 @@
     flex-wrap: wrap
     justify-content: flex-start
     align-items: center
-    margin-bottom: 115px
+    opacity: 0
+    transform: translateY(30px)
     width: 100%
   &__maximalize
     background-color: transparent

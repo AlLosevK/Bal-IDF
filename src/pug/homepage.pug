@@ -4,38 +4,47 @@ bodyClass: homepage-body
 ---
 extends shared/_layout
 block content
-  main
-    section.main
+  main.main
+    section.head
       .container
-        .main__slider
-          h1.main__title Lorem ipsum dolor.
+        .head__slider
+          h1.head__title Lorem ipsum dolor.
             br
             span Lorem ipsum dolor sit amet.
-          p.main__content  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt eligendi sed deleniti quibusdam ea aliquam fugiat recusandae impedit ipsum maxime.
-          .main__links
-            a.main__link Start Now
-            a.main__link.main__link-inactive Contact Us
+          p.head__content  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt eligendi sed deleniti quibusdam ea aliquam fugiat recusandae impedit ipsum maxime.
+          .head__links
+            a.head__link Start Now
+            a.head__link.head__link-inactive Contact Us
     section.about
       .container
-        .about__directions
+        .about__directions.directions
           .directions__item
+            span.directions__number 01
             h3.directions__title Lorem ipsum.
             p.directions__content Lorem ipsum dolor sit amet, consectetur.
               a.directions__link.directions__link-unassigned(href="#") Unassigned link
             p.directions__content Lorem ipsum dolor sit amet, consectetur.
               a.directions__link(href="google.com") Google inc.
-          .directions__item
+            a.directions__link-nav(href="#")
+              +icon('ico-right-arrow')
+          .directions__item.directions__item-pic
+            span.directions__number 02
             h3.directions__title Lorem ipsum.
             p.directions__content Lorem ipsum dolor sit amet, consectetur.
               a.directions__link.directions__link-unassigned(href="#") Unassigned link
             p.directions__content Lorem ipsum dolor sit amet, consectetur.
               a.directions__link(href="google.com") Google inc.
+            a.directions__link-nav(href="#")
+              +icon('ico-right-arrow')
           .directions__item
+            span.directions__number 03
             h3.directions__title Lorem ipsum.
             p.directions__content Lorem ipsum dolor sit amet, consectetur.
               a.directions__link.directions__link-unassigned(href="#") Unassigned link
             p.directions__content Lorem ipsum dolor sit amet, consectetur.
               a.directions__link(href="google.com") Google inc.
+            a.directions__link-nav(href="#")
+              +icon('ico-right-arrow')
         .about__info
           h2.about__title How we work
           .about__aside
@@ -63,10 +72,11 @@ block content
       .portfolio__row
           .portfolio__item
             .portfolio__content
-              h3.portfolio__title Great Tower of Chinese Bank
-              .portfolio__tags
-                span.portfolio__tag Interior,
-                span.portfolio__tag Peinting
+              div.portfolio__content-container
+                h3.portfolio__title Great Tower of Chinese Bank
+                .portfolio__tags
+                  span.portfolio__tag Interior,
+                  span.portfolio__tag Peinting
               .portfolio__item-nav
                 button.portfolio__maximalize
                   +icon('ico-add')
@@ -74,10 +84,11 @@ block content
                   +icon('ico-right-arrow')
           .portfolio__item
             .portfolio__content
-              h3.portfolio__title Great Tower of Chinese Bank
-              .portfolio__tags
-                span.portfolio__tag Interior,
-                span.portfolio__tag Peinting
+              div.portfolio__content-container
+                h3.portfolio__title Great Tower of Chinese Bank
+                .portfolio__tags
+                  span.portfolio__tag Interior,
+                  span.portfolio__tag Peinting
               .portfolio__item-nav
                 button.portfolio__maximalize
                   +icon('ico-add')
@@ -85,10 +96,11 @@ block content
                   +icon('ico-right-arrow')
           .portfolio__item
             .portfolio__content
-              h3.portfolio__title Great Tower of Chinese Bank
-              .portfolio__tags
-                span.portfolio__tag Interior,
-                span.portfolio__tag Peinting
+              div.portfolio__content-container
+                h3.portfolio__title Great Tower of Chinese Bank
+                .portfolio__tags
+                  span.portfolio__tag Interior,
+                  span.portfolio__tag Peinting
               .portfolio__item-nav
                 button.portfolio__maximalize
                   +icon('ico-add')
@@ -96,58 +108,63 @@ block content
                   +icon('ico-right-arrow')
           .portfolio__item
             .portfolio__content
-              h3.portfolio__title Great Tower of Chinese Bank
-              .portfolio__tags
-                span.portfolio__tag Interior,
-                span.portfolio__tag Peinting
+              div.portfolio__content-container
+                h3.portfolio__title Great Tower of Chinese Bank
+                .portfolio__tags
+                  span.portfolio__tag Interior,
+                  span.portfolio__tag Peinting
               .portfolio__item-nav
                 button.portfolio__maximalize
                   +icon('ico-add')
                 a(href="#").portfolio__link
                   +icon('ico-right-arrow')
       .portfolio__row
-          .portfolio__item
-            .portfolio__content
+        .portfolio__item
+          .portfolio__content
+            div.portfolio__content-container
               h3.portfolio__title Great Tower of Chinese Bank
               .portfolio__tags
                 span.portfolio__tag Interior,
                 span.portfolio__tag Peinting
-              .portfolio__item-nav
-                button.portfolio__maximalize
-                  +icon('ico-add')
-                a(href="#").portfolio__link
-                  +icon('ico-right-arrow')
-          .portfolio__item
-            .portfolio__content
+            .portfolio__item-nav
+              button.portfolio__maximalize
+                +icon('ico-add')
+              a(href="#").portfolio__link
+                +icon('ico-right-arrow')
+        .portfolio__item
+          .portfolio__content
+            div.portfolio__content-container
               h3.portfolio__title Great Tower of Chinese Bank
               .portfolio__tags
                 span.portfolio__tag Interior,
                 span.portfolio__tag Peinting
-              .portfolio__item-nav
-                button.portfolio__maximalize
-                  +icon('ico-add')
-                a(href="#").portfolio__link
-                  +icon('ico-right-arrow')
-          .portfolio__item
-            .portfolio__content
+            .portfolio__item-nav
+              button.portfolio__maximalize
+                +icon('ico-add')
+              a(href="#").portfolio__link
+                +icon('ico-right-arrow')
+        .portfolio__item
+          .portfolio__content
+            div.portfolio__content-container
               h3.portfolio__title Great Tower of Chinese Bank
               .portfolio__tags
                 span.portfolio__tag Interior,
                 span.portfolio__tag Peinting
-              .portfolio__item-nav
-                button.portfolio__maximalize
-                  +icon('ico-add')
-                a(href="#").portfolio__link
-                  +icon('ico-right-arrow')
-          .portfolio__item
-            .portfolio__content
+            .portfolio__item-nav
+              button.portfolio__maximalize
+                +icon('ico-add')
+              a(href="#").portfolio__link
+                +icon('ico-right-arrow')
+        .portfolio__item
+          .portfolio__content
+            div.portfolio__content-container
               h3.portfolio__title Great Tower of Chinese Bank
               .portfolio__tags
                 span.portfolio__tag Interior,
                 span.portfolio__tag Peinting
-              .portfolio__item-nav
-                button.portfolio__maximalize
-                  +icon('ico-add')
-                a(href="#").portfolio__link
-                  +icon('ico-right-arrow') 
+            .portfolio__item-nav
+              button.portfolio__maximalize
+                +icon('ico-add')
+              a(href="#").portfolio__link
+                +icon('ico-right-arrow')
           
