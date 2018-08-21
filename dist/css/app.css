@@ -1257,6 +1257,10 @@ body.no-scroll, html.no-scroll {
   padding: 15px 0;
 }
 
+.header__link:hover {
+  opacity: 0.4;
+}
+
 .footer {
   background-color: #303233;
   padding: 70px 0 0;
@@ -1342,6 +1346,8 @@ body.no-scroll, html.no-scroll {
 
 .footer__feedback {
   margin: 0 15px 0 0;
+  height: 20px;
+  width: 20px;
 }
 
 .footer__nav {
@@ -1356,6 +1362,15 @@ body.no-scroll, html.no-scroll {
 
 .footer__link {
   margin: 0 0 25px;
+  display: block;
+  width: 100%;
+}
+
+.footer__link:hover {
+  color: #b3b3b3;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
 }
 
 .footer__copyright {
@@ -1396,8 +1411,7 @@ body.no-scroll, html.no-scroll {
 }
 
 .news__img img {
-  max-width: 50px;
-  max-height: 50px;
+  width: 100%;
 }
 
 .news__content {
@@ -1407,7 +1421,6 @@ body.no-scroll, html.no-scroll {
 .news__title {
   font-size: 14px;
   margin: 0 0 5px;
-  padding: 5px 0;
 }
 
 .news__date {
@@ -1415,8 +1428,41 @@ body.no-scroll, html.no-scroll {
   margin: 0;
 }
 
+.ico-facebook-logo:hover {
+  color: #3b5998;
+}
+
+.ico-google-plus:hover {
+  color: #dd4b39;
+}
+
+.ico-instagram-logo:hover {
+  color: #bc2a8d;
+}
+
+.ico-linkedin:hover {
+  color: #007bb6;
+}
+
+.ico-skype-logo:hover {
+  color: #00AFF0;
+}
+
+.ico-twitter:hover {
+  color: #00aced;
+}
+
+.ico-youtube:hover {
+  color: #bb0000;
+}
+
+.footer .ico {
+  width: 100%;
+  height: 100%;
+}
+
 .head {
-  background-image: url("http://unibuild.gtcreators.com/wp-content/uploads/revslider/first/slider-1.jpg");
+  background-image: url("../img/slider-1.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
@@ -1517,7 +1563,7 @@ body.no-scroll, html.no-scroll {
 
 .about {
   position: relative;
-  background-image: url("http://unitech.gtcreators.com/wp-content/uploads/2017/06/bg-1.jpg?id=63");
+  background-image: url("../img/bg-1.jpg?id=63");
   background-repeat: no-repeat;
   -webkit-background-size: 100% 70%;
           background-size: 100% 70%;
@@ -1673,7 +1719,7 @@ body.no-scroll, html.no-scroll {
 }
 
 .directions__item-pic {
-  background-image: url("http://unibuild.gtcreators.com/wp-content/uploads/2017/06/feature_item_i.jpg");
+  background-image: url("../img/feature_item_i.jpg");
   background-repeat: no-repeat;
   background-position: 100% 100%;
   -webkit-background-size: 100% 100%;
@@ -1686,6 +1732,14 @@ body.no-scroll, html.no-scroll {
 
 .directions__item-pic .directions__link-nav {
   border-color: #fff;
+}
+
+.directions__item-pic .directions__link-nav:hover {
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.directions__item-pic .directions__link-nav:hover svg {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .directions__item-pic .directions__link-nav svg {
@@ -1728,6 +1782,14 @@ body.no-scroll, html.no-scroll {
   bottom: 20px;
   right: 20px;
   padding: 6px 4px 3px;
+}
+
+.directions__link-nav:hover {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.directions__link-nav:hover svg {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .directions__link-nav svg {
@@ -1824,7 +1886,7 @@ body.no-scroll, html.no-scroll {
 }
 
 .portfolio__item {
-  background-image: url("http://unibuild.gtcreators.com/wp-content/uploads/2017/06/portfolio-2-2-500x375.jpg");
+  background-image: url("../img/portfolio-2-2-500x375.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: 100% 100%;
           background-size: 100% 100%;
@@ -1965,6 +2027,15 @@ body.no-scroll, html.no-scroll {
       -ms-transform: translateY(30px);
           transform: translateY(30px);
   width: 100%;
+  cursor: pointer;
+}
+
+.portfolio__tag {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.portfolio__tag:hover {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .portfolio__maximalize {
@@ -1972,6 +2043,10 @@ body.no-scroll, html.no-scroll {
   color: #fff;
   cursor: pointer;
   border: none;
+}
+
+.portfolio__maximalize:hover {
+  color: #999999;
 }
 
 .portfolio__maximalize svg {
@@ -1984,6 +2059,10 @@ body.no-scroll, html.no-scroll {
   color: #fff;
   cursor: pointer;
   border: none;
+}
+
+.portfolio__link:hover {
+  color: #999999;
 }
 
 .portfolio__link svg {

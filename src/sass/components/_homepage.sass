@@ -1,5 +1,5 @@
 .head
-  background-image: url("http://unibuild.gtcreators.com/wp-content/uploads/revslider/first/slider-1.jpg")
+  background-image: url("../img/slider-1.jpg")
   background-repeat: no-repeat
   background-size: cover
   &__slider
@@ -57,7 +57,7 @@
 
 .about
   position: relative
-  background-image: url("http://unitech.gtcreators.com/wp-content/uploads/2017/06/bg-1.jpg?id=63")
+  background-image: url("../img/bg-1.jpg?id=63")
   background-repeat: no-repeat
   background-size: 100% 70%
   background-position: 100% 100%
@@ -132,7 +132,7 @@
     width: 32%
     position: relative
     &-pic
-      background-image: url('http://unibuild.gtcreators.com/wp-content/uploads/2017/06/feature_item_i.jpg')
+      background-image: url('../img/feature_item_i.jpg')
       background-repeat: no-repeat
       background-position: 100% 100%
       background-size: 100% 100%
@@ -142,6 +142,10 @@
         &__link
           &-nav
             border-color: #fff
+            &:hover
+              border-color: rgba(#ffffff, 0.7)
+              & svg
+                color: rgba(#ffffff, 0.7)
             & svg
               color: #fff
   &__number
@@ -170,6 +174,10 @@
       bottom: 20px
       right: 20px
       padding: 6px 4px 3px
+      &:hover
+        border-color: rgba(0, 0, 0, 0.3)
+        & svg
+          color: rgba(0, 0, 0, 0.3)
       & svg
         width: 23px
 
@@ -217,7 +225,7 @@
     align-items: center
     width: 100%
   &__item
-    background-image: url('http://unibuild.gtcreators.com/wp-content/uploads/2017/06/portfolio-2-2-500x375.jpg')
+    background-image: url('../img/portfolio-2-2-500x375.jpg')
     background-repeat: no-repeat
     background-size: 100% 100%
     background-position: 50% 50%
@@ -279,11 +287,18 @@
     opacity: 0
     transform: translateY(30px)
     width: 100%
+    cursor: pointer
+  &__tag
+    color: rgba(255,255,255,0.85)
+    &:hover
+      color: rgba(255,255,255,0.6)
   &__maximalize
     background-color: transparent
     color: #fff
     cursor: pointer
     border: none
+    &:hover
+      color: darken(#fff, 40%)
     & svg
       width: 35px
       height: 35px
@@ -292,6 +307,8 @@
     color: #fff
     cursor: pointer
     border: none
+    &:hover
+      color: darken(#fff, 40%)
     & svg
       width: 25px
       height: 25px
